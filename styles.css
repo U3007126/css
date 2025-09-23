@@ -1,0 +1,11 @@
+/* Apply to the whole page */
+body {
+  background-color: black;
+  color: limegreen;
+  font-family: Arial, sans-serif;
+}
+
+/* Optional: Ensure headings and links also follow the color scheme */
+h1, h2, h3, h4, h5, h6, p, a, li, td, th {
+  color: limegreen;
+}
