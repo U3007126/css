@@ -1,11 +1,135 @@
-/* Apply to the whole page */
+
+/* Global reset and theme */
 body {
-  background-color: black;
-  color: limegreen;
+  margin: 0;
   font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #000000;
+  color: #00FF00;
 }
 
-/* Optional: Ensure headings and links also follow the color scheme */
-h1, h2, h3, h4, h5, h6, p, a, li, td, th {
-  color: limegreen;
+/* Sidebar menu on the left */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #000000;
+  padding-top: 80px;
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+/* Menu list styling */
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  padding: 10px 20px;
+}
+
+ul.menu li a {
+  color: #00FF00;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+ul.menu li a:hover {
+  background-color: #111111;
+}
+
+/* Highlight active page (optional) */
+ul.menu li a.active {
+  background-color: #222222;
+  font-weight: bold;
+}
+
+/* Main content area */
+.main-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #000000;
+}
+
+/* Header layout */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-text {
+  flex: 3;
+}
+
+.header-image {
+  flex: 1;
+  text-align: right;
+}
+
+.header-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00FF00;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #00FF00;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #00FF00;
+}
+
+h4, h5, h6 {
+  color: #00FF00;
+}
+
+strong {
+  color: #32CD32; /* Lime Green */
+}
+
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #D35400;
+}
+
+/* Images */
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #222222;
+  font-size: 0.9em;
+  color: #00FF00;
 }
